@@ -7,4 +7,9 @@ defmodule FoodDiaryWeb.Schema.Types.User do
     field :name, non_null(:string), description: "User's name. Must be a string."
     field :email, non_null(:string), description: "User's e-mail. Must be a string."
   end
+
+  input_object :create_user_input do
+    field :name, non_null(:string), description: "User's name. Must be a string."
+    field :email, non_null(:string), description: "User's e-mail. Must be a string."
+  end
 end
